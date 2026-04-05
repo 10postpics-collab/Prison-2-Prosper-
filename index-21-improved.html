@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improved Index 21</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <!-- JSON-LD Structured Data for SEO -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Event",
+            "name": "Booking Event",
+            "startDate": "2026-04-06T14:30:00Z",
+            "location": {
+                "@type": "Place",
+                "name": "Location Name",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "1234 Example St",
+                    "addressLocality": "City",
+                    "addressRegion": "State",
+                    "postalCode": "12345",
+                    "addressCountry": "Country"
+                }
+            },
+            "image": "https://example.com/image.jpg",
+            "description": "Description of the booking event."
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Prison to Prosper</h1>
+        <nav>
+            <button aria-expanded="false" role="button" id="mobile-menu-toggle">Menu</button>
+            <ul role="tablist">
+                <li role="tab"><a href="#tab1">Resource 1</a></li>
+                <li role="tab"><a href="#tab2">Resource 2</a></li>
+                <li role="tab"><a href="#tab3">Resource 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <div id="name-feedback"></div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <div id="email-feedback"></div>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <section id="booking">
+            <h2>Book Your Event</h2>
+            <form id="booking-form">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                <div id="date-feedback"></div>
+                <button type="submit">Book</button>
+            </form>
+        </section>
+
+        <section id="blog">
+            <h2>Blog Articles</h2>
+            <article id="modal-fsa">
+                <h3>FSA Article</h3>
+                <button class="open-modal">Read More</button>
+            </article>
+            <article id="modal-truck">
+                <h3>Truck Article</h3>
+                <button class="open-modal">Read More</button>
+            </article>
+            <article id="modal-housing">
+                <h3>Housing Article</h3>
+                <button class="open-modal">Read More</button>
+            </article>
+        </section>
+
+        <button id="back-to-top" aria-label="Back to top">⬆️</button>
+    </main>
+
+    <footer>
+        <p>© 2026 Prison to Prosper. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scroll for back-to-top button
+        document.getElementById('back-to-top').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Modal functionality
+        const modals = document.querySelectorAll('.open-modal');
+        modals.forEach(modal => {
+            modal.addEventListener('click', function() {
+                // Code to open modal
+            });
+        });
+
+        // Form validation
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', function(event) {
+            // Validation code
+            event.preventDefault();
+        });
+
+        const bookingForm = document.getElementById('booking-form');
+        bookingForm.addEventListener('submit', function(event) {
+            // Validation code
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>
